@@ -26,3 +26,7 @@ npx -p typescript tsc -p .  # type-check
 orca plugin dev watch .     # load into Orca and stream logs/reloads
 orca plugin dev hook . agent.tool.after --data '{"agent":"claude","workspaceId":null,"terminalId":"t1","tool":"Skill","input":{"skill":"mt-build"}}'
 ```
+
+## License
+
+MIT, see [LICENSE](LICENSE).

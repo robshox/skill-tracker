@@ -2,8 +2,9 @@
   "manifestVersion": 2,
   "id": "skill-tracker",
   "name": "Skill Tracker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shows which skills agents load in each session, when, and how often.",
+  "license": "MIT",
   "engines": {
     "orca": ">=1.4.248"
   },
@@ -21,7 +22,9 @@
       }
     ],
     "hooks": [
-      { "event": "agent.tool.after" }
+      {
+        "event": "agent.tool.after"
+      }
     ]
   },
   "capabilities": [
