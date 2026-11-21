@@ -1,0 +1,32 @@
+{
+  "manifestVersion": 2,
+  "id": "skill-tracker",
+  "name": "Skill Tracker",
+  "version": "0.1.0",
+  "description": "Shows which skills agents load in each session, when, and how often.",
+  "engines": {
+    "orca": ">=1.4.248"
+  },
+  "execution": "trusted-worker",
+  "pluginApi": 1,
+  "main": "src/worker.ts",
+  "contributes": {
+    "panels": [
+      {
+        "id": "skill-tracker",
+        "title": "Skill Tracker",
+        "icon": "activity",
+        "entry": "src/panel.tsx",
+        "ui": "components"
+      }
+    ],
+    "hooks": [
+      { "event": "agent.tool.after" }
+    ]
+  },
+  "capabilities": [
+    {
+      "kind": "storage:own"
+    }
+  ]
+}
